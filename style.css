@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap);
+:root {
+    --primary: #ff6900;
+    --text: #bcbcbc;
+    --white: #fdfeff;
+    --background: #0a0a0a;
+}
+* {
+    box-sizing: border-box;
+    
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+header {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fdfeff50;
+}
+header h3#logo {
+    color: var(--white);
+}
+.primary {
+    color: var(--primary)!important;
+}
+a.button {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    color: var(--background);
+    border-radius: 2rem;
+    background-color: var(--primary);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin: 1rem auto;
+}
+header a#cta {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+}
+#banner {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+#banner h1 {
+    color: var(--white);
+    margin: 1rem auto;
+}
+#portfolio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    gap: 10px;
+}
+#portfolio .card {
+    text-align: center;
+    box-shadow: 0 0 1px var(--text);
+    padding: 0.25rem;
+    border-radius: 4px;
+}
+#about {
+    text-align: center;
+}
+#about h1 {
+    color: var(--white);
+    margin: 1rem auto;
+    margin-bottom: 0;
+}
+#about h2 {
+    color: var(--white);
+}
+#about h1 span {
+    background-color: var(--primary);
+    color: var(--background);
+    border-radius: 4px;
+    padding-inline: 5px;
+}
+#modules {
+    padding: 1rem;
+}
+.modules-card {
+    box-shadow: 0 0 1px var(--text);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: left;
+    margin: 0.5rem auto;
+}
+.modules-card p:nth-child(1) {
+    font-weight: bold;
+    color: var(--primary);
+    margin: 0.5rem auto;
+}
+#testimonials {
+    text-align: center;
+    padding: 1rem;
+}
+#testimonials h2 {
+    color: var(--white);
+}
+#testimonials > img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    margin-bottom: 4rem;
+}
+#results-cont {
+    padding: 1rem;
+}
+#results-cont .results {
+    box-shadow: 0 0 1px  var(--text);
+    border-radius: 0.5rem;
+    text-align: left;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+.results div {
+    height: 200px;
+    overflow: hidden;
+}
+.results div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center 50%;
+    
+}
+.results p {
+    padding: 1rem 1rem;
+}
+.results .primary {
+    font-weight: bold;
+}
+#closing-CTA {
+    text-align: center;
+    padding: 1rem;
+}
+#closing-CTA h2 {
+    color: var(--white);
+    margin: 0.5rem;
+}
+#closing-CTA .button {
+    display: block;
+}
+#closing-CTA .outline {
+    border: 1px solid var(--text);
+    color: var(--white);
+    background-color: var(--background);
+    margin: 0.5rem auto;
+}
+footer {
+    border-top: 0.5px solid var(--text);
+    padding: 1rem;
+    text-align: center;
+}
