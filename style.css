@@ -410,7 +410,7 @@ footer {
     max-width: 720px;
     margin: 0 auto 2rem;
 }
-.bonus-list span {
+/*.bonus-list span {
     border: 1px solid var(--line);
     border-radius: 0.75rem;
     padding: 1rem;
@@ -422,7 +422,7 @@ footer {
     color: var(--accent);
     font-weight: 800;
     margin-right: 0.55rem;
-}
+}*/
 
 .closing-section {
     background: linear-gradient(180deg, #15100d, #0a0a0a);
@@ -503,4 +503,419 @@ footer {
     .closing-section {
         padding: 3.5rem 0;
     }
+}
+
+/* =========================================
+   BACF 10X GROWTH VAULT — BONUS SECTION
+========================================= */
+
+.bacf-bonus-section {
+  --bacf-gold: #f5c451;
+  --bacf-gold-light: #ffe7a3;
+  --bacf-bg: #08090d;
+  --bacf-card: #11131a;
+  --bacf-text: #f7f7f8;
+  --bacf-muted: #b6b8c3;
+  --bacf-border: rgba(245, 196, 81, 0.22);
+
+  width: 100%;
+  padding: 80px 20px;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(245, 196, 81, 0.10),
+      transparent 42%
+    ),
+    var(--bacf-bg);
+  color: var(--bacf-text);
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.bacf-bonus-section *,
+.bacf-bonus-section *::before,
+.bacf-bonus-section *::after {
+  box-sizing: border-box;
+}
+
+.bacf-bonus-container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.bacf-bonus-label {
+  display: table;
+  margin: 0 auto 22px;
+  padding: 9px 17px;
+  border: 1px solid var(--bacf-border);
+  border-radius: 50px;
+  background: rgba(245, 196, 81, 0.08);
+  color: var(--bacf-gold-light);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.bacf-bonus-heading {
+  max-width: 850px;
+  margin: 0 auto 20px;
+  color: var(--bacf-text);
+  font-size: clamp(30px, 5vw, 54px);
+  font-weight: 900;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: -1.5px;
+}
+
+.bacf-bonus-heading span {
+  display: block;
+  margin-top: 8px;
+  background: linear-gradient(
+    100deg,
+    #fff0b9 0%,
+    #f5c451 45%,
+    #d99b20 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bacf-bonus-subheading {
+  max-width: 730px;
+  margin: 0 auto 40px;
+  color: var(--bacf-muted);
+  font-size: 16px;
+  line-height: 1.85;
+  text-align: center;
+}
+
+.bacf-bonus-offer-banner {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  max-width: 850px;
+  margin: 0 auto 38px;
+  padding: 23px;
+  border: 1px solid rgba(245, 196, 81, 0.4);
+  border-radius: 15px;
+  background: linear-gradient(
+    115deg,
+    rgba(245, 196, 81, 0.13),
+    rgba(245, 196, 81, 0.035)
+  );
+}
+
+.bacf-bonus-banner-icon {
+  flex-shrink: 0;
+  font-size: 35px;
+}
+
+.bacf-bonus-offer-banner strong {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--bacf-gold-light);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.bacf-bonus-offer-banner p {
+  margin: 0;
+  color: var(--bacf-muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.bacf-bonus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.bacf-bonus-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 25px 22px 23px;
+  overflow: hidden;
+  border: 1px solid var(--bacf-border);
+  border-radius: 17px;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.045),
+    rgba(255, 255, 255, 0.012)
+  );
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.bacf-bonus-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(245, 196, 81, 0.65);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.bacf-bonus-number {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  padding: 7px 11px;
+  border-radius: 5px;
+  background: rgba(245, 196, 81, 0.11);
+  color: var(--bacf-gold-light);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.bacf-bonus-icon {
+  margin-bottom: 16px;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.bacf-bonus-card h3 {
+  margin: 0 0 13px;
+  color: var(--bacf-text);
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.bacf-bonus-card p {
+  flex-grow: 1;
+  margin: 0 0 23px;
+  color: var(--bacf-muted);
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.bacf-bonus-value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 17px;
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.bacf-bonus-old-price {
+  color: #a7a9b2;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: line-through;
+  text-decoration-color: #ff6666;
+  text-decoration-thickness: 2px;
+}
+
+.bacf-bonus-free {
+  display: inline-block;
+  padding: 9px 14px;
+  border-radius: 7px;
+  background: #16a765;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(22, 167, 101, 0.2);
+}
+
+.bacf-bonus-featured {
+  border-color: rgba(245, 196, 81, 0.65);
+  background: linear-gradient(
+    145deg,
+    rgba(245, 196, 81, 0.12),
+    rgba(17, 19, 26, 0.95)
+  );
+}
+
+.bacf-bonus-total {
+  margin-top: 35px;
+  padding: 32px 20px;
+  border: 1px solid rgba(245, 196, 81, 0.45);
+  border-radius: 17px;
+  background: linear-gradient(
+    120deg,
+    rgba(245, 196, 81, 0.10),
+    rgba(245, 196, 81, 0.025)
+  );
+  text-align: center;
+}
+
+.bacf-bonus-total-label {
+  margin: 0 0 14px;
+  color: var(--bacf-muted);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.bacf-bonus-total-prices {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.bacf-bonus-total-old {
+  color: #b1b1b8;
+  font-size: clamp(23px, 4vw, 36px);
+  font-weight: 800;
+  text-decoration: line-through;
+  text-decoration-color: #ff6666;
+  text-decoration-thickness: 3px;
+}
+
+.bacf-bonus-total-free {
+  color: #55e6a0;
+  font-size: clamp(25px, 4vw, 38px);
+  font-weight: 900;
+}
+
+.bacf-bonus-total-note {
+  max-width: 620px;
+  margin: 17px auto 0;
+  color: var(--bacf-muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.bacf-bonus-urgency {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+  margin-top: 30px;
+  padding: 25px;
+  border: 1px solid rgba(255, 164, 72, 0.3);
+  border-radius: 13px;
+  background: rgba(255, 164, 72, 0.055);
+}
+
+.bacf-bonus-urgency-icon {
+  flex-shrink: 0;
+  font-size: 28px;
+}
+
+.bacf-bonus-urgency h3 {
+  margin: 0 0 9px;
+  color: #ffd18c;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.bacf-bonus-urgency p {
+  margin: 0;
+  color: var(--bacf-muted);
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.bacf-bonus-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  width: 100%;
+  max-width: 650px;
+  min-height: 62px;
+  margin: 32px auto 0;
+  padding: 18px 24px;
+  border: none;
+  border-radius: 9px;
+  background: linear-gradient(100deg, #ffe49b, #f5c451, #e5a82b);
+  color: #17130a !important;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none !important;
+  box-shadow: 0 8px 25px rgba(245, 196, 81, 0.18);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.bacf-bonus-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(245, 196, 81, 0.3);
+}
+
+.bacf-bonus-cta span {
+  font-size: 23px;
+}
+
+.bacf-bonus-footer {
+  max-width: 650px;
+  margin: 18px auto 0;
+  color: #858793;
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* TABLETS */
+@media (max-width: 900px) {
+  .bacf-bonus-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .bacf-bonus-section {
+    padding: 65px 18px;
+  }
+}
+
+/* MOBILE PHONES */
+@media (max-width: 560px) {
+  .bacf-bonus-section {
+    padding: 48px 14px;
+  }
+
+  .bacf-bonus-heading {
+    font-size: 33px;
+    letter-spacing: -0.8px;
+  }
+
+  .bacf-bonus-subheading {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .bacf-bonus-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .bacf-bonus-card {
+    padding: 23px 20px;
+  }
+
+  .bacf-bonus-card h3 {
+    font-size: 19px;
+  }
+
+  .bacf-bonus-offer-banner {
+    align-items: flex-start;
+    padding: 18px;
+  }
+
+  .bacf-bonus-offer-banner strong {
+    font-size: 13px;
+  }
+
+  .bacf-bonus-urgency {
+    padding: 19px 16px;
+  }
+
+  .bacf-bonus-cta {
+    min-height: 58px;
+    padding: 16px;
+    font-size: 13px;
+  }
 }
