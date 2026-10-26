@@ -14,6 +14,7 @@
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -480,9 +481,45 @@
   </div>
 </section>
   
-  <section id="guarantee" style="text-align: center; padding: 1rem">
+  
+  <!-- Slider main container -->
+  <section id="testimonials">
     <h2>If you don't see result in 90days? I will personally walk you through or refund you your money back and you will still keep the system with you!</h2>
+    <div class="swiper testimonials-swiper" aria-label="Student testimonials">
+      <div class="swiper-wrapper">
+        <article class="swiper-slide results">
+          <div class="testimonial-image"><img src="images/IMG_1.JPG" alt="Student feedback about reaching 4,000 followers" loading="lazy"></div>
+          <p>“Just reached 4k followers in one month wow 🎉🎉🎉 Sharing tips to succeed online and it's actually working!”</p>
+          <p class="primary">— Zama Luthuli</p>
+        </article>
+        <article class="swiper-slide results">
+          <div class="testimonial-image"><img src="images/IMG_2.JPG" alt="Student feedback about making a first sale" loading="lazy"></div>
+          <p>“All it took was just applying the little correction my coach taught me on how to talk to my leads!”</p>
+          <p class="primary">— Fathia</p>
+        </article>
+        <article class="swiper-slide results">
+          <div class="testimonial-image"><img src="images/IMG_3.JPG" alt="Student feedback about making multiple sales" loading="lazy"></div>
+          <p>“Just made my 8th sale and counting in just one day! Thanks coach for creating this course.”</p>
+          <p class="primary">— Tumi</p>
+        </article>
+        <article class="swiper-slide results">
+          <div class="testimonial-image"><img src="images/IMG_4.jpg" alt="Student payment and consistency feedback" loading="lazy"></div>
+          <p>“Consistency is power… Making sales daily becomes easier when you are consistent in generating new leads daily. Thanks to my amiable coach.”</p>
+          <p class="primary">— Emmanuel</p>
+        </article>
+        <article class="swiper-slide results">
+          <div class="testimonial-image"><img src="images/IMG_5.jpg" alt="Student feedback about learning practical skills" loading="lazy"></div>
+          <p>“Basic skill and knowledge of how to ACTUALLY make money for yourself shouldn't be one of them at all! Thanks for the BACF course.”</p>
+          <p class="primary">— Chidinma</p>
+        </article>
+      </div>
+      <div class="swiper-pagination"></div>
+      <button class="swiper-button-prev" type="button" aria-label="Previous testimonial"></button>
+      <button class="swiper-button-next" type="button" aria-label="Next testimonial"></button>
+    </div>
+    <p class="testimonial-more">And lots more...</p>
   </section>
+
   
   <section class="closing-section">
       <div class="section-wrap closing-inner">
@@ -512,6 +549,7 @@
   <script src="main.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>lucide.createIcons()</script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
 </body>
 </html>
